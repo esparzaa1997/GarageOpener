@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Opener</title>
+</head>
+<body>
+    {% for i in response %}
+    <h1>Name: {{i.name}}</h1>
+    <h1>Status : {{i.isOpen}}</h1>
+    <h1>ID: {{i.id}}</h1>
+    {% endfor %}
+</body>
+</html>
